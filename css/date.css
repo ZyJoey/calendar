@@ -1,0 +1,109 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: "Microsoft YaHei","HeiTi";
+	color: #333;
+}
+.container{
+	width: 360px;
+	margin: 20px 40px;
+}
+.date{
+	width:80px;
+	height: 25px;
+	padding: 0 10px;
+	font-size: .9em;
+	font-family: "Microsoft YaHei","HeiTi";
+	margin: 15px 0;
+}
+.calendar{
+	z-index: 100;
+	position: absolute;
+	width: 360px;
+	padding:10px 10px;
+	border: 1px solid #ccc;
+	-webkit-box-shadow: 0 0 5px #ccc;
+	-moz-box-shadow: 0 0 5px #ccc;
+	-ms-box-shadow: 0 0 5px #ccc;
+	-o-box-shadow: 0 0 5px #ccc;
+	box-shadow:0 0 5px #ccc;
+	background-color: #fff;
+}
+.triangle{
+	position: absolute;
+	width: 13px;
+	height: 7px;
+	top:-7px;
+	left: 20px;
+	background: url(../images/triangle.gif) no-repeat;
+}
+.item{
+	text-align: center;
+}
+.item div{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 15px;
+}
+.item .left{
+	left: 10px;
+	background: url(../images/left.png) no-repeat;
+	background-size: contain;
+}
+.item .right{
+	right: 10px;
+	background: url(../images/right.png) no-repeat;
+	background-size: contain;
+}
+.item select{
+	width: 80px;
+	height: 30px;
+	font-size: 1em;
+	font-family: "Microsoft YaHei","HeiTi";
+	margin: 0 5px;
+}
+
+.week{
+	margin: 20px 0;
+	text-align: center;
+	overflow: hidden;
+
+}
+.week dt{
+	width: 14%;
+	float: left;
+}
+.listing{
+	margin-bottom: 5px;
+	text-align: center;
+	overflow: hidden;
+}
+.listing dd{
+	width: 14.28%;
+	height: 40px;
+	font-size: 1em;
+	line-height: 40px;
+	float: left;
+}
+.listing dd:not(.blank):hover{
+	cursor: pointer;
+	background-color: #ECECFB;
+	-moz-border-radius:50% ;
+	border-radius:50%;
+}
+.listing .fill{
+	border-top: 1px solid #ccc;
+}
+.listing .select{
+	background-color: #EEE;
+	-moz-border-radius:50% ;
+	border-radius:50%;
+}
+.listing .current{
+	background-color: #ECECFB;
+	-moz-border-radius:50% ;
+	border-radius:50%;
+}
