@@ -32,21 +32,22 @@ var EventUtil={
 		}
 	}
 };
+/*格式化日期*/
+Date.prototype.format=function(){
+	var _year,_month,_date;
+	_year=this.getFullYear();
+	_month=this.getMonth()+1;
+	_date=this.getDate();
+	var str=_year+"-"+_month+"-"+_date;
+	return str;
+};
 (function(){
-	var body=document.getElementsByTagName("body")[0];
+	var body=document.body;
 	/*日期输入框*/
 	var date=document.getElementById("date");
 	/*日期容器*/
 	var container=document.getElementById("container");
-	/*格式化日期*/
-	Date.prototype.format=function(){
-		var _year,_month,_date;
-		_year=this.getFullYear();
-		_month=this.getMonth()+1;
-		_date=this.getDate();
-		var str=_year+"-"+_month+"-"+_date;
-		return str;
-	}
+
 	/*在输入框写入今天的日期*/
 	function writeDate(){
 		now=new Date().format();
